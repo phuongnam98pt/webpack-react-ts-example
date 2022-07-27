@@ -8,14 +8,14 @@ import {
 } from "react-router-dom";
 import "./../assets/scss/App.scss";
 
-const reactLogo = require("./../assets/img/react_logo.svg");
+const reactLogo = require("./../assets/img/img_test.jpg");
 
 export default function ParamsExample() {
   return (
     <Router>
       <div>
         <h2>Accounts</h2>
-
+        <img src={reactLogo.default} height="480" />
         <ul>
           <li>
             <Link to="/netflix">Netflix</Link>

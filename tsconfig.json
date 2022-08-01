@@ -1,12 +1,19 @@
 {
   "compilerOptions": {
+    "baseUrl": "./src",
     "jsx": "react-jsx",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "module": "ESNext",
     "moduleResolution": "node",
     "outDir": "dist",
     "target": "ESNext",
-    "sourceMap": true
+    "sourceMap": true,
   },
-  "include": ["src"]
+  "include": [
+    "src"
+  ]
 }

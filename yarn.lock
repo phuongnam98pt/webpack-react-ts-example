@@ -2167,6 +2167,14 @@
   "resolved" "https://registry.npmjs.org/asynckit/-/asynckit-0.4.0.tgz"
   "version" "0.4.0"
 
+"axios@^0.27.2":
+  "integrity" "sha512-t+yRIyySRTp/wua5xEr+z1q60QmLq8ABsS5O9Me1AsE5dfKqgnCFzwiCZZ/cGNd1lq4/7akDWMxdhVlucjmnOQ=="
+  "resolved" "https://registry.npmjs.org/axios/-/axios-0.27.2.tgz"
+  "version" "0.27.2"
+  dependencies:
+    "follow-redirects" "^1.14.9"
+    "form-data" "^4.0.0"
+
 "babel-jest@^28.1.3":
   "integrity" "sha512-epUaPOEWMk3cWX0M/sPvCHHCe9fMFAa/9hXEgKP8nFfNl/jlGkE9ucq9NqkZGXLDduCJYS0UvSlPUwC0S+rH6Q=="
   "resolved" "https://registry.npmjs.org/babel-jest/-/babel-jest-28.1.3.tgz"
@@ -3245,7 +3253,7 @@
   dependencies:
     "once" "^1.4.0"
 
-"enhanced-resolve@^5.9.3":
+"enhanced-resolve@^5.7.0", "enhanced-resolve@^5.9.3":
   "integrity" "sha512-T0yTFjdpldGY8PmuXXR0PyQ1ufZpEGiHVrp7zHKB7jdR4qlmZHhONVM5AQOAWXuF/w3dnHbEQVrNptJgt7F+cQ=="
   "resolved" "https://registry.npmjs.org/enhanced-resolve/-/enhanced-resolve-5.10.0.tgz"
   "version" "5.10.0"
@@ -3888,7 +3896,7 @@
   "resolved" "https://registry.npmjs.org/flatted/-/flatted-3.2.6.tgz"
   "version" "3.2.6"
 
-"follow-redirects@^1.0.0":
+"follow-redirects@^1.0.0", "follow-redirects@^1.14.9":
   "integrity" "sha512-yLAMQs+k0b2m7cVxpS1VKJVvoz7SS9Td1zss3XRwXj+ZDH00RJgnuLx7E44wx02kQLrdM3aOOy+FpzS7+8OizA=="
   "resolved" "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.15.1.tgz"
   "version" "1.15.1"
@@ -5628,6 +5636,11 @@
   dependencies:
     "brace-expansion" "^1.1.7"
 
+"minimist@^1.2.6":
+  "integrity" "sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q=="
+  "resolved" "https://registry.npmjs.org/minimist/-/minimist-1.2.6.tgz"
+  "version" "1.2.6"
+
 "mozjpeg@^7.0.0":
   "integrity" "sha512-iIDxWvzhWvLC9mcRJ1uSkiKaj4drF58oCqK2bITm5c2Jt6cJ8qQjSSru2PCaysG+hLIinryj8mgz5ZJzOYTv1A=="
   "resolved" "https://registry.npmjs.org/mozjpeg/-/mozjpeg-7.1.1.tgz"
@@ -7113,6 +7126,11 @@
   dependencies:
     "ansi-regex" "^5.0.1"
 
+"strip-bom@^3.0.0":
+  "integrity" "sha512-vavAMRXOgBVNF6nyEEmL3DBK19iRpDcoIwW+swQ+CbGiu7lju6t+JklA1MHweoWtadgt4ISVUsXLyDq34ddcwA=="
+  "resolved" "https://registry.npmjs.org/strip-bom/-/strip-bom-3.0.0.tgz"
+  "version" "3.0.0"
+
 "strip-bom@^4.0.0":
   "integrity" "sha512-3xurFv5tEgii33Zi8Jtp55wEIILR9eh34FAW00PZf+JnSsTmV/ioewSgQl97JHvgjoRGwPShsWm+IdrxB35d0w=="
   "resolved" "https://registry.npmjs.org/strip-bom/-/strip-bom-4.0.0.tgz"
@@ -7354,6 +7372,24 @@
   "version" "1.0.0"
   dependencies:
     "escape-string-regexp" "^1.0.2"
+
+"tsconfig-paths-webpack-plugin@^4.0.0":
+  "integrity" "sha512-fw/7265mIWukrSHd0i+wSwx64kYUSAKPfxRDksjKIYTxSAp9W9/xcZVBF4Kl0eqQd5eBpAQ/oQrc5RyM/0c1GQ=="
+  "resolved" "https://registry.npmjs.org/tsconfig-paths-webpack-plugin/-/tsconfig-paths-webpack-plugin-4.0.0.tgz"
+  "version" "4.0.0"
+  dependencies:
+    "chalk" "^4.1.0"
+    "enhanced-resolve" "^5.7.0"
+    "tsconfig-paths" "^4.0.0"
+
+"tsconfig-paths@^4.0.0":
+  "integrity" "sha512-SLBg2GBKlR6bVtMgJJlud/o3waplKtL7skmLkExomIiaAtLGtVsoXIqP3SYdjbcH9lq/KVv7pMZeCBpLYOit6Q=="
+  "resolved" "https://registry.npmjs.org/tsconfig-paths/-/tsconfig-paths-4.0.0.tgz"
+  "version" "4.0.0"
+  dependencies:
+    "json5" "^2.2.1"
+    "minimist" "^1.2.6"
+    "strip-bom" "^3.0.0"
 
 "tslib@^1.8.1":
   "integrity" "sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg=="

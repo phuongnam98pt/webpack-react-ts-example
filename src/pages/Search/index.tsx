@@ -1,15 +1,14 @@
 import { Component } from "react";
-import { BrowserRouter } from "react-router-dom";
+import { Outlet, useOutletContext } from "react-router-dom";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
-import AuthService from "../services/auth.service";
+import AuthService from "model/services/AuthService";
 
 interface RouterProps {
   history: string;
 }
-
-type Props = BrowserRouter<RouterProps>;
+type Props = {};
 
 type State = {
   username: string,
@@ -48,9 +47,15 @@ export default class Login extends Component<Props, State> {
 
 
     AuthService.login(username, password).then(
-      () => {
-        this.props.history.push("/profile");
-        window.location.reload();
+      (data) => {
+        console.log(data)
+        // this.props.history.push("/profile");
+        // window.location.reload();
+        this.setState({
+          loading: false,
+          message: ""
+        });
+        alert(data.message)
       },
       error => {
         const resMessage =
